@@ -260,7 +260,7 @@ header{position: relative;}
     padding: 10px;
   }
   
-  .social > a:hover, a:focus{
+  .social > a:hover, .social > a:focus{
     text-decoration: none;
     color: white;
   }
