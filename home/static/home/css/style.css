@@ -14,8 +14,8 @@ header{position: relative;}
 .floating{
   position: fixed; 
   z-index: 999; 
-  margin-top: 20px; 
-  background: rgba(0,0,0,0.2); 
+  margin-top: 0px; 
+  /*background: rgba(0,0,0,0.2); */
   border-radius: 3px;
 }
 
@@ -77,11 +77,11 @@ header{position: relative;}
 }
 
 .navbar-brand{
-	font-family:'Satisfy',Cursive;
+  font-family:'Satisfy',Cursive;
 }
 
 .panel-default{
-	border-radius: 0px;
+  border-radius: 0px;
 }
 
 .btn-home,.btn-mid-section{
@@ -103,6 +103,7 @@ header{position: relative;}
 
 .btn-book{
   background-color: rgba(0,0,0,0.2);
+  background-color: #337AB7;
   border-radius: 0px;
   padding-left: 50px;
   padding-right: 50px; 
@@ -120,14 +121,18 @@ header{position: relative;}
   
 }
 
-.btn-home:hover,.btn-mid-section:hover, .btn-book:hover{
- /* background-color: white;*/
+.btn-home:hover,.btn-mid-section:hover{
+ /*background-color: white;*/
   /*background-color: rgba(1,1,1,0.3);*/
 
   color: #D47970;
 }
 
-.btn-home::after {
+.btn-book:hover{
+  background-color: white;
+}
+
+.btn-home::after, .btn-mid-section::after {
   content: '';
   position: absolute;
   z-index: -990;
@@ -146,18 +151,11 @@ header{position: relative;}
   transform: translateX(-50%) translateY(-50%) rotate(45deg);
 }
 
-.btn-home:hover::after {
+.btn-home:hover::after,.btn-mid-section:hover::after {
   height: 200%;
   opacity: 1;
   overflow: hidden;
-}
-
-/*.btn-home::after{
-  content: '';
-  position: absolute;
-  background-color: white;
-  transform: rotate(25deg);
-}*/
+} 
 
 .panel-body{
   padding-right: 0px;
@@ -172,8 +170,8 @@ header{position: relative;}
 }
 
 .review-image {
-	margin-right: 50px;
-	padding-right: 50px; 
+  margin-right: 50px;
+  padding-right: 50px; 
 }
 
 .panel-heading{
@@ -199,11 +197,11 @@ header{position: relative;}
 }
 
 .btn-primary{
-	border-radius: 0px !important;
-	padding: 10px;
-	padding-left: 50px;
-	padding-right: 50px;
-	float: right;
+  border-radius: 0px !important;
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  float: right;
 
 }
 
@@ -245,36 +243,56 @@ header{position: relative;}
 
 .col-md-4 img{
   width: 100%;
-
 }
+
+.floating .panel-default{
+    position: fixed; 
+    z-index: 999; 
+    margin-top: 20px; 
+    background: rgba(0,0,0,0.2); 
+    border-radius: 3px;
+    left: 15px;
+  }
+
+  /*.floating  .col-md-1 > .panel-default > .panel-body >*/ 
+
+  .social{
+    padding: 10px;
+  }
+  
+  .social > a:hover, a:focus{
+    text-decoration: none;
+    color: white;
+  }
+
+
 @media only screen and (max-width: 995px) {
-.memo{
+  .memo{
     margin-top: 0px;
     margin-right: 0px;
     margin-left: 0px;
   }
 
   .review{
-  padding-right: 0px;
-  text-align: justify;
-  padding-left: 0px;
-  margin-left: 0px; 
-  
-}
+    padding-right: 0px;
+    text-align: justify;
+    padding-left: 0px;
+    margin-left: 0px; 
+  }
 
-.review-image {
-  display: none;
-}
+  .review-image {
+    display: none;
+  }
 
-.h3{
-  font-size: 16px;
-}
+  .h3{
+    font-size: 16px;
+  }
 
-.panel-heading{
-  font-size: 20px;
-}
+  .panel-heading{
+    font-size: 20px;
+  }
 
-.btn-mid-section, .btn-book{
+  .btn-mid-section, .btn-book{
     padding-left:  25px;
     padding-right:  25px;
     font-size: 14px;
@@ -285,30 +303,7 @@ header{position: relative;}
     padding-left:  25px;
     padding-right:  25px;
   }
-
-  .floating .panel-default{
-  position: fixed; 
-  z-index: 999; 
-  margin-top: 20px; 
-  background: rgba(0,0,0,0.2); 
-  border-radius: 3px;
-}
-
-.floating:hover >a {
-  color: white;
-}
-
-}
-
-.footer{
-  /*bottom: 0px; */
-  /*color: white;*/
-  /*background-image: url('../../images/PoonHill.jpg');*/
-}
-
-
-
-
+}  
 
 
 /*for screen size below 500*/
@@ -356,45 +351,45 @@ header{position: relative;}
   }
 
   .review{
-  padding-right: 0px;
-  text-align: justify;
-  padding-left: 0px;
-  margin-left: 0px; 
-  font-size: 12px;
-}
+    padding-right: 0px;
+    text-align: justify;
+    padding-left: 0px;
+    margin-left: 0px; 
+    font-size: 12px;
+  }
 
-.review-image {
-  display: none;
-}
+  .review-image {
+    display: none;
+  }
 
-.panel-heading{
-  font-size: 22px;
-}
- 
- h3{
-  font-size: 18px;
- }
+  .panel-heading{
+    font-size: 22px;
+  }
+   
+  h3{
+    font-size: 18px;
+  }
 
  .floating .panel-default{
-  position: fixed; 
-  z-index: 999; 
-  margin-top: 20px; 
-  background: rgba(0,0,0,0.2); 
-  background: white;
-  border-radius: 3px;
-}
+    position: fixed; 
+    /*z-index: -999; */
+    margin-top: 20px; 
+    background: rgba(0,0,0,0.2); 
+    background: white;
+    border-radius: 3px;
+  }
 
-.floating .panel-default .fa{
-  font-size: 25px;
-}
+  .floating .panel-default .fa{
+    font-size: 25px;
+  }
 
-.floating .panel-default .fa:hover{
-  text-decoration: none;
-}
+  .floating .panel-default .fa:hover{
+    text-decoration: none;
+  }
 
-.footer p{
-  font-size: 10px;
-}
+  .footer p{
+    font-size: 10px;
+  }
 }
 
 
