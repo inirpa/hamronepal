@@ -303,6 +303,10 @@ header{position: relative;}
     padding-left:  25px;
     padding-right:  25px;
   }
+
+  .floating .panel-default{
+    left:95%;
+  }
 }  
 
 
@@ -377,6 +381,7 @@ header{position: relative;}
     background: rgba(0,0,0,0.2); 
     background: white;
     border-radius: 3px;
+    left:80%;
   }
 
   .floating .panel-default .fa{
@@ -385,6 +390,7 @@ header{position: relative;}
 
   .floating .panel-default .fa:hover{
     text-decoration: none;
+    color:#286090;
   }
 
   .footer p{
