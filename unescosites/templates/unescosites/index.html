@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Unesco Sites</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<style type="text/css">
+		.btn-primary:hover{background-color:#337ab7;border-color:#2e6da4}
+	</style>
+</head>
+<body>
+	<h3>sites listed under UNESCO </h3>
+	<ul>
+		{% if all_sites %}
+			{% for site in all_sites %}
+			<li>
+				{{ site.name }} {{ site.description }} <br><img src='{{ site.featured_image.url }}' style="height: 200px; ">
+				<button class="btn btn-primary" style="padding: 50px; padding-top: 10px; padding-bottom: 10px; color:#fff;background-color:#337ab7;border-color:#2e6da4">
+					View Deatils
+				</button>
+				<hr>
+			</li>
+			{% endfor %}
+		{% else %}
+			 <h2>No data</h2>
+		{% endif %}
+	</ul>
+</body>
+</html>
