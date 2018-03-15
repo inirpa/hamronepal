@@ -8,13 +8,13 @@
 
 	<title>{{ option.title }}</title>
 	<link rel="icon" href="static/images/hamro nepal logo.png" type="image/gif" sizes="16x16">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 	<link rel="stylesheet" type="text/css" href="static/home/css/bootstrap.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
-	 
+	
+	<script src="{% static 'home/js/jquery.min.js' %}"></script> 
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
+	
 	<link rel="stylesheet" type="text/css" href="{% static 'home/css/style.css' %}">
 	<style type="text/css">
 		/*.bkg{
@@ -242,7 +242,7 @@
 		</div>
 	</div>
 	
-	<div class="container-fluid">
+	<!-- <div class="container-fluid"> -->
 		<div class="mid-section">
 			<div class="row">
 
@@ -254,7 +254,7 @@
 				
 			</div>	
 		</div>
-	</div>
+	<!-- </div> -->
 
 	<div class="container">
 		<div class="packages" id="offers">
@@ -376,7 +376,7 @@
 								<div class="review-image">
 									{% for memo in memos %}
 										<!-- <img src="{{ memo.featured_image.url }}" height="250px;" width="auto"> -->
-										<img src="https://image.ibb.co/jGUr0H/Nepalese_Pagoda.jpg" height="250px;" width="auto">
+										<!-- <img src="https://image.ibb.co/jGUr0H/Nepalese_Pagoda.jpg" height="250px;" width="auto"> -->
 									{% endfor %}	
 								</div>
 							</div>
@@ -387,10 +387,10 @@
 		</div>
 	</div>	
 
-	<div class="container-fluid">
+	<!-- <div class=""> -->
 		<!-- <div class="bottom-section"> -->
-		<div class="row">
-			<div class="col-md-12">
+		<!-- <div class="row"> -->
+			<div class="col-md-12" style="padding: 0px;">
 				<div class="footer">
 					<p style="position: absolute; bottom: 0px; display: inline; color: white">
 						HamroNepal designed by Nirpa Hang Rai
@@ -400,10 +400,10 @@
 			<!-- <p>HamroNepal designed by Nirpa Hang Rai</p> -->
 
 		</div>		
-			</div>
+			<!-- </div> -->
 		</div>	
 		<!-- </div>	 -->
-	</div>	
+	<!-- </div>	 -->
 	
 	{% endfor %}
 
